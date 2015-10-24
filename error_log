@@ -1,0 +1,2 @@
+[31-May-2015 19:11:25] PHP Fatal error:  Class 'MY_Controller' not found in /home1/juandel1/public_html/www/juandel.com/application/controllers/Web.php on line 4
+[31-May-2015 19:20:47] PHP Fatal error:  Can't use function return value in write context in /home1/juandel1/public_html/www/juandel.com/application/views/sec_nav.php on line 39
