@@ -135,7 +135,15 @@ class Works extends MY_Controller {
 				$this->upload->initialize($config);
 				// If title does NOT exist in WORKS insert Work data into WORK DB
 				if (!$this->Works_model->check_title_exists($data['title'])) {
-					$data['work_id']=$this->Works_model->insert_work($data['title'],$data['description'],$data['location'], $data['category'],$data['superficie'], $data['lat'],$data['lng']);
+					
+					if ($data['lat']>0 && $data['lng']>0) {
+						echo "Menos de 0";
+						$data['work_id']=$this->Works_model->insert_work($data['title'],$data['description'],$data['location'], $data['category'],$data['superficie'],$data['lat'],$data['lng']);
+					}else{
+						echo "Mas de 0";
+						$data['work_id']=$this->Works_model->insert_work($data['title'],$data['description'],$data['location'], $data['category'],$data['superficie']);
+					}
+
 					$data['amenities_id'] = $this->Amenities_model->insert_amenities($data['amenities'],$data['work_id'] );
 					
 					$files = $_FILES['images'];

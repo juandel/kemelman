@@ -115,10 +115,10 @@ class Web extends MY_Controller {
 					$email = array(
 						'html' => '<h2>Message:</h2><p>'.$data['message']."</p><br><h4>Customer's location: ". $data['location'].'<h4>', //Consider using a view file
 						'text' => $data['message']."Customer's location: ". $data['location'],
-						'subject' => 'Jaddel.com - Contact form',
+						'subject' => 'estudiokemelman.com.ar - Formulario de contacto',
 						'from_email' => $data['email'],
 						'from_name' => $data['name'],
-						'to' => array(array('email' => 'juandel@gmail.com' )) //Check documentation for more details on this one
+						'to' => array(array('email' => 'martin@estudiokemelman.com.ar' )) //Check documentation for more details on this one
 						//'to' => array(array('email' => 'joe@example.com' ),array('email' => 'joe2@example.com' )) //for multiple emails
 						);
 

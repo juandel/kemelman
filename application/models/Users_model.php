@@ -25,6 +25,22 @@ class Users_model extends CI_Model {
             return FALSE;
         }
     }
+
+    function get_user($user_id){
+        $query = $this->db->get_where('users', array('user_id' => $user_id));
+        return $query->first_row('array');
+    }
+
+    function change_password($password, $username, $email, $usertype, $user_id){
+        $data = array(
+           'username' => $username ,
+           'password' => $password ,
+           'email' => $email ,
+           'user_type' => $usertype
+        );
+
+        $this->db->update('users', $data, array('user_id' => $user_id));
+    }
 }
     
  ?>

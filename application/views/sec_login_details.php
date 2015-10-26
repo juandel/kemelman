@@ -5,7 +5,7 @@ foreach ($head as $he) {
 }
 
 ?>
-<section id="login">
+<section id="login_details">
     <div class="container-fluid">
         <div class="row">
             <div class="col-lg-12">
@@ -13,59 +13,64 @@ foreach ($head as $he) {
               if (!$error==0) {
                 echo '<div class="alert alert-danger" style="background-color:white; border:none">'.$error.'</div>';
               }
+              echo validation_errors();
 
-               $data_form = array('style' => 'padding:20px;');
-                echo form_open('users/login', $data_form);
+              if (isset($_SESSION['user_id'])){
+
+                $data_form = array('style' => 'padding:20px;');
+                echo form_open('users/login_details', $data_form);
 
                 div("", "form-group");  
-                echo form_label('User', 'username');
-                $data_user = array(
-                              'name'        => 'username',
-                              'id'          => 'username',
+                echo "<h4> Cambiar contraseña para el usuario <span style='color:grey;'>". $user['username']. ".</span></h4>";
+
+                echo form_label('Password', 'password1');
+                $data_password1 = array(
+                              'name'        => 'password1',
+                              'id'          => 'password1',
                               'maxlength'   => '32',
                               'size'        => '50',
                               'style'       => 'width:30%',
                               'class'       =>"form-control"
                             );
-                echo form_input($data_user);
+                echo form_password($data_password1);
                 echo form_error('username');
                 div_c(); 
 
                   div("", "form-group");  
-                echo form_label('Password', 'password');
-                $data_password = array(
-                              'name'        => 'password',
-                              'id'          => 'password',
+                echo form_label('Verificar Password', 'password2');
+                $data_password2 = array(
+                              'name'        => 'password2',
+                              'id'          => 'password2',
                               'maxlength'   => '32',
                               'size'        => '50',
                               'style'       => 'width:30%',
                               'class'       =>"form-control"
                             );
-                echo form_password($data_password);
+                echo form_password($data_password2);
                 echo form_error('password');
                 div_c();    
 
                 $data_submit = array(
-                              'name'        => 'submit_user',
+                              'name'        => 'change_password',
                               'class'          => 'btn btn-default',
-                              'value'       => 'Login',
+                              'value'       => 'Cambiar contraseña',
                             );
                 echo form_submit($data_submit);
                 echo form_close();
-                ?>
-            </div>
 
-            <?php 
-              if (isset($_SESSION['user_id'])){
-            ?>
-            <div class= "col-md-10">
-              <p><a href="<?=base_url('users/login_details')?>">Cambiar contraseña usuario</a></p>
-            </div>
-            
-            <?php 
-              } 
-            ?>
+              }else{
+              ?>
 
+              <p class="alert alert-danger" style="background-color:white; border:none">
+                Necesitas estar loggueado como admin para cambiar la contraseña.
+              </p>
+              
+              <?php
+
+              }
+
+              ?>
+            </div>
         </div>
     </div>
 </section>

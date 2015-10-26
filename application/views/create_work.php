@@ -125,8 +125,8 @@ foreach ($head as $he) {
       div("", "form-group");  
       echo form_label('Categoria', 'category');
       $options_category = array(
-                    'vivienda_unifamiliares' => 'Vivienda unifamiliares',
-                    'vivienda_multifamiliares' => 'Vivienda multifamiliares',
+                    'vivienda_unifamiliar' => 'Vivienda unifamiliares',
+                    'vivienda_multifamiliar' => 'Vivienda multifamiliares',
                     'varios'   => 'Varios'
                     );
 
@@ -184,7 +184,7 @@ foreach ($head as $he) {
       echo form_close();
       ?>
 
-      <a id="deleteButton" class="btn btn-danger" href="<?=base_url('web')?>">Cancel</a>
+      <a class="btn" href="<?=base_url('web')?>">Cancel</a>
 
     </div>
 </section>

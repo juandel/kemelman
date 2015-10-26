@@ -9,7 +9,8 @@
                     <?php
                     if (isset($_SESSION['user_id'])){
                     ?>
-
+                            <a class="page-scroll" href="<?=base_url('users/login')?>">Admin</a>
+                            <br>
                             <a class="page-scroll" href="<?=base_url('users/logout')?>">Log Out</a>
                     <?php 
                     }else{

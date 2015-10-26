@@ -1015,6 +1015,12 @@ ul.social-buttons li a:active {
   opacity: 0;
   display: none;
 }
+section#login {
+  padding-top: 20px;
+}
+section#login_details {
+  padding-top: 20px;
+}
 ::-moz-selection {
   text-shadow: none;
   background: #a7d5fc;

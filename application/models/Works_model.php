@@ -27,18 +27,17 @@ class Works_model extends CI_Model {
         }
     }
 
-    function insert_work($title, $description, $location, $category, $superficie, $lat, $lng)
+    function insert_work($title, $description, $location, $category, $superficie, $lat=NULL, $lng=NULL)
     {
-       $data = array(
-		   'title' => $title ,
-		   'description' => $description ,
-           'location' => $location,
-           'category' => $category,
-           'superficie' => $superficie,
-           'lat' => $lat,
-           'lng' => $lng
-		);
-
+            $data = array(
+               'title' => $title ,
+               'description' => $description ,
+               'location' => $location,
+               'category' => $category,
+               'superficie' => $superficie,
+               'lat' => $lat,
+               'lng' => $lng
+            );
 
         $this->db->insert('works', $data);
         return $this->db->insert_id();

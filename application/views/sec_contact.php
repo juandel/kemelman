@@ -79,7 +79,7 @@
           </div>
       </div>
       <div class="col-lg-12 text-center">
-        <h3 class="section-subheading" style="color:white;">info@kemelman.com</h3>
+        <h3 class="section-subheading" style="color:white;">info@estudiokemelman.com.ar</h3>
       </div>
   </div>
 </section>
