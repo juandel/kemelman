@@ -6,10 +6,10 @@
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta name="description" content="Architectural renderings photo realistic visualizations. ">
-        <meta name="author" content="Juan Delgado">
+        <meta name="description" content="Estudio Kemelman - construcciones">
+        <meta name="author" content="Kemelman">
 
-        <title>Jaddel - Architectural rendering</title>
+        <title>Estudio Kemelman - Construcciones</title>
 
         <!-- Bootstrap Core CSS -->
         <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" rel="stylesheet">
