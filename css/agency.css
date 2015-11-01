@@ -440,6 +440,8 @@ section h3.section-subheading {
   position: relative;
   max-width: 400px;
   margin: 0 auto;
+  height: 225px;
+  overflow: hidden;
 }
 #obras .portfolio-item .portfolio-link .portfolio-hover {
   background: rgba(167, 213, 252, 0.9);
