@@ -72,6 +72,7 @@
             }
             echo "</div>";
         }
+        
 
         if (isset($edificios)) {
 

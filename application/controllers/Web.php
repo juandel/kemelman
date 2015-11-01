@@ -215,6 +215,7 @@ class Web extends MY_Controller {
 			}
 
 		}
+
 		return $this->load->view('sec_portfolio',$data, TRUE);
 	}
 

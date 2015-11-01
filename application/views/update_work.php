@@ -87,8 +87,8 @@ $url_title = url_title($view_name);
       div("", "form-group");  
       echo form_label('Categoria', 'category');
       $options_category = array(
-                    'vivienda_unifamiliares' => 'Vivienda unifamiliares',
-                    'vivienda_multifamiliares' => 'Vivienda multifamiliares',
+                    'vivienda_unifamiliar' => 'Vivienda unifamiliares',
+                    'vivienda_multifamiliar' => 'Vivienda multifamiliares',
                     'varios'   => 'Varios'
                   );
       echo form_dropdown('category', $options_category,$work[0]['category']);
