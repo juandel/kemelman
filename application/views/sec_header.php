@@ -18,7 +18,7 @@
                     $ext = explode('.', $image);
                     echo "<li>";
                     $image_properties = array(
-                        'src'   => base_url('img/slider/'.$ext[0].".".$ext[1]),
+                        'src'   => base_url('img/uploads/'.$ext[0].".".$ext[1]),
                         'alt'   => 'jaddel_slider_image'.$ext[0],
                         'style' => 'width:100%;'
                     );
