@@ -31,8 +31,8 @@
                             <img src="<?=base_url()?>img/uploads/<?=$images[0]['name']?>" class="img-responsive" >
                         </a>
                         <div class="portfolio-caption">
-                            <h6 class="col-md-8"style="text-align:left;"><?=$viv_uni['title']?></h6>
-                            <p class="col-md-4"style="text-align:right;"><?=$viv_uni['superficie']?> m2</p>
+                            <h6 class="col-md-10"style="text-align:left;"><?=$viv_uni['title']?></h6>
+                            <p class="col-md-2"style="text-align:right;"><?=$viv_uni['superficie']?> m2</p>
                         </div>
                     </div>
 
@@ -62,8 +62,8 @@
                             <img src="<?=base_url()?>img/uploads/<?=$images[0]['name']?>" class="img-responsive" >
                         </a>
                         <div class="portfolio-caption">
-                            <h6 class="col-md-8"style="text-align:left;"><?=$viv_multi['title']?></h6>
-                            <p class="col-md-4"style="text-align:right;"><?=$viv_multi['superficie']?> m2</p>
+                            <h6 class="col-md-10"style="text-align:left;"><?=$viv_multi['title']?></h6>
+                            <p class="col-md-2"style="text-align:right;"><?=$viv_multi['superficie']?> m2</p>
                         </div>
                     </div>
 
@@ -95,8 +95,8 @@
                             <img src="<?=base_url()?>img/uploads/<?=$images[0]['name']?>" class="img-responsive" >
                         </a>
                         <div class="portfolio-caption">
-                            <h6 class="col-md-8"style="text-align:left;"><?=$edificio['title']?></h6>
-                            <p class="col-md-4"style="text-align:right;"><?=$edificio['superficie']?> m2</p>
+                            <h6 class="col-md-10"style="text-align:left;"><?=$edificio['title']?></h6>
+                            <p class="col-md-2"style="text-align:right;"><?=$edificio['superficie']?> m2</p>
                         </div>
                     </div>
 
