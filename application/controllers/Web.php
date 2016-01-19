@@ -177,6 +177,9 @@ class Web extends MY_Controller {
 			$images_names[] = $value['name'];		
 		}
 
+		$data['files_in_directory']= scandir('img/slider/');
+
+
 		$data['images']= $images_names;
 		return $this->load->view('sec_header',$data, TRUE);
 
