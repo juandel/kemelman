@@ -24,10 +24,13 @@
 				?>
 
 					 <div class="col-md-4 col-sm-6 portfolio-item">
-					    <div class="img-thumbnail" style="height:210px; overflow:hidden; border-radius:0px">
-					        <a href="<?=base_url()?>img/uploads/<?=$value['name']?>" class="portfolio-link" data-toggle="modal" data-lightbox="images_works">
-					            <img src="<?=base_url()?>img/uploads/<?=$value['name']?>" class="img-responsive">
-					        </a>
+					    <div class="img-thumbnail" style="height:210px;  border-radius:0px">
+					    	<div style="height:210px; overflow:hidden;" >
+					    		<a href="<?=base_url()?>img/uploads/<?=$value['name']?>" class="portfolio-link" data-toggle="modal" data-lightbox="images_works">
+						            <img src="<?=base_url()?>img/uploads/<?=$value['name']?>" class="img-responsive">
+						        </a>
+					    	</div>
+					        
 					    </div>
 					</div>
 
