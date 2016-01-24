@@ -28,12 +28,15 @@ if (uri_string()=="web" || uri_string()=="") {
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
-        <a class="navbar-brand page-scroll" style="background-color:white;" href="<?php 
+        <a class="navbar-brand page-scroll" style="background-color:white;" href="
+                                                        <?php 
                                                           if (uri_string() =="web" || uri_string()=="" ){
                                                               echo '#header';
                                                           }else{
                                                               echo base_url();
-                                                          }?>"><?php echo file_get_contents("img/logos/logo_brand_kemelman.svg"); ?><p><span>Estudio</span> <br>ING. KEMELMAN<br><span>Britect SRL</span></p></a>
+                                                          }
+                                                        ?>">
+                                                          <?php echo file_get_contents("img/logos/logo_brand_kemelman_02.svg"); ?><p><span>Estudio</span> <br>ING. KEMELMAN<br><span>Britect SRL</span></p></a>
       </div>
 
       <!-- Collect the nav links, forms, and other content for toggling -->
