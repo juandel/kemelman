@@ -24,8 +24,8 @@
 				?>
 
 					 <div class="col-md-4 col-sm-6 portfolio-item">
-					    <div class="img-thumbnail" style="border-radius:0px">
-					    	<div style="height:210px; overflow:hidden;" >
+					    <div class="img-thumbnail" >
+					    	<div class="<?=get_working_uri_keyword()?>-fix-imgs" >
 					    		<a href="<?=base_url()?>img/uploads/<?=$value['name']?>" class="portfolio-link" data-toggle="modal" data-lightbox="images_works">
 						            <img src="<?=base_url()?>img/uploads/<?=$value['name']?>" class="img-responsive">
 						        </a>
@@ -39,8 +39,8 @@
 
 				?>
 			</div>
-			<div class="<?=get_working_uri_keyword()?>_description row bg-light-gray" >
-				<div class="col-md-offset-1 col-md-5">
+			<div class="<?=get_working_uri_keyword()?>_description row container-fluid" >
+				<div class="col-md-5">
 					<h2 id="obra_title"><?=$work[0]['title']?></h2>
 					<h5>
 					<?php 
@@ -55,7 +55,7 @@
 
 					<p class="description"><?=$work[0]['description']?></p>
 				</div>
-				<div class="col-md-offset-1 col-md-5">
+				<div class="col-md-offset-2 col-md-5">
 					<div class="row">
 						<h4>Amenities:</h4>
 					</div>
