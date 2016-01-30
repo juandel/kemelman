@@ -289,7 +289,6 @@ class Web extends MY_Controller {
 			$data['position']=$this->input->post('position');
 			$data['facebook']=$this->input->post('facebook');
 			$data['linkedin']=$this->input->post('linkedin');
-
 			
 			$this->load->library('image_lib');
 
@@ -320,6 +319,57 @@ class Web extends MY_Controller {
 		}else{
 			$this->load->view('update_team_member', $data);
 		}
+	}
+	public function delete_team_member($id=NULL)
+	{
+
+		$data['head']=$this->head;
+		$data['footer']=$this->footer;
+
+		$data['team_member_id']=$id;
+
+		if (isset($id)) {
+
+			$data['team_member'] = $this->Team_model->get_team_member($id);
+			print_r($data['team_member']);
+		}
+
+			
+	// 		if($this->Works_model->delete_works($id)){
+	// 			$data['confirm'] = "Work was Deleted from works table";
+	// 			if ($this->Amenities_model->delete_amenities($id)) {
+	// 				$data['confirm'] = "all amenities were Deleted from amenities table";
+	// 			}
+	// 			if ($this->Images_model->delete_images($id)) {
+	// 				$data['confirm'] = "Work was Deleted from images table and works table";
+					
+	// 				foreach ($data['images'] as $image) {
+	// 					$ext = explode('.', $image['name']);
+ //        				$filename_ext = "./img/uploads/".$ext[0]."_thumb.".$ext[1];
+	// 					$filename = "./img/uploads/".$image['name'];
+	// 		            if (is_file($filename)) {
+	// 		                @unlink($filename);
+	// 		                @unlink($filename_ext);
+	// 		                $data['error']['not_deleted'] = "the file was deleted succesfully";
+	// 		            }else{
+	// 		                $data['error']['not_deleted'] = "the filename: ".$filename." is not a file. Can't erase";
+	// 		            }
+	// 				}
+
+	// 			}else{
+	// 				$data['confirm'] = "Could not delete images of work from images table but could delete from works.";
+	// 			}
+
+	// 		}else{
+	// 			$data['confirm'] = "Could not delete work from works table. Something went wrong";
+	// 		}
+			
+	// 	}else{
+	// 		$data['error']['no_id'] = "No ID for work to delete";
+	// 	}
+		
+
+		$this->load->view('delete_work', $data);
 	}
 
 	private function clients()

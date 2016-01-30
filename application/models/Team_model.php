@@ -48,6 +48,12 @@ class Team_model extends CI_Model {
         $this->db->update('team', $data, array('id' => $id));
     }
 
+    function delete_team_member($id)
+    {
+        return $this->db->delete('team', array('id' => $id));
+
+    }
+
 
 }
 ?>

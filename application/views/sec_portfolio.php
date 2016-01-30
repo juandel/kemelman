@@ -12,7 +12,7 @@
         if (isset($vivienda_unifamiliar)) {
 
             echo '<div class="row '.$vivienda_unifamiliar[0]['category'].'"id="'.$vivienda_unifamiliar[0]['category'].'">';
-            echo "<div class='row col-md-6 col-md-offset-3'><h4>Vivienda Unifamiliares</h4></div>";;
+            echo "<div class='row col-md-6 col-md-offset-3'><h4>Viviendas Unifamiliares</h4></div>";;
 
             foreach ($vivienda_unifamiliar as $viv_uni) {
                 $images = $viv_uni['images'];
@@ -44,7 +44,7 @@
         if (isset($vivienda_multifamiliar)) {
 
             echo '<div class="row '.$vivienda_multifamiliar[0]['category'].'"id="'.$vivienda_multifamiliar[0]['category'].'">';
-            echo "<div class='row col-md-6 col-md-offset-3' ><h4>Vivienda Multifamiliares</h4></div>";
+            echo "<div class='row col-md-6 col-md-offset-3' ><h4>Viviendas Multifamiliares</h4></div>";
 
             foreach ($vivienda_multifamiliar as $viv_multi) {
                 $images = $viv_multi['images'];
