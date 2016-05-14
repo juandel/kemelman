@@ -213,8 +213,10 @@ class Web extends MY_Controller {
 				$data['vivienda_unifamiliar'][] = $value;
 			}elseif ($value['category']=='vivienda_multifamiliar') {
 				$data['vivienda_multifamiliar'][] = $value;
+			}elseif ($value['category']=='varios') {
+				$data['varios'][] = $value;
 			}else{
-				$data['edificios'][] = $value;
+				$data['en_procesos'][] = $value;
 			}
 
 		}

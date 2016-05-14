@@ -74,29 +74,62 @@
         }
         
 
-        if (isset($edificios)) {
+        if (isset($varios)) {
 
-            echo '<div class="row '.$edificios[0]['category'].'"id="'.$edificios[0]['category'].'">';
+            echo '<div class="row '.$varios[0]['category'].'"id="'.$varios[0]['category'].'">';
             echo "<div class='row col-md-6 col-md-offset-3'><h4>Varios</h4></div>";
 
-            foreach ($edificios as $edificio) {
-                $images = $edificio['images'];
+            foreach ($varios as $vario) {
+                $images = $vario['images'];
                 // foreach work it will show only first image
                 if(isset($images[0])){
         ?>             
 
                     <div class="col-md-4 col-sm-6 portfolio-item">
-                        <a href="<?=base_url()?>works/show_work/<?=$edificio['id']?>" class="portfolio-link" data-toggle="modal">
+                        <a href="<?=base_url()?>works/show_work/<?=$vario['id']?>" class="portfolio-link" data-toggle="modal">
                             <div class="portfolio-hover">
                                 <div class="portfolio-hover-content">
-                                     <p ><?=$edificio['description']?></p>
+                                     <p ><?=$vario['description']?></p>
                                 </div>
                             </div>
                             <img src="<?=base_url()?>img/uploads/<?=$images[0]['name']?>" class="img-responsive" >
                         </a>
                         <div class="portfolio-caption">
-                            <h6 class="col-md-9"style="text-align:left;"><?=$edificio['title']?></h6>
-                            <p class="col-md-3"style="text-align:left;"><?=$edificio['superficie']?> m2</p>
+                            <h6 class="col-md-9"style="text-align:left;"><?=$vario['title']?></h6>
+                            <p class="col-md-3"style="text-align:left;"><?=$vario['superficie']?> m2</p>
+                        </div>
+                    </div>
+
+        <?php
+                }                
+            }
+            echo "</div>";
+
+        }
+
+        if (isset($en_procesos)) {
+
+            echo '<div class="row '.$en_procesos[0]['category'].'"id="'.$en_procesos[0]['category'].'">';
+            echo "<div class='row col-md-6 col-md-offset-3'><h4>En proceso</h4></div>";
+
+            foreach ($en_procesos as $en_proceso) {
+                $images = $en_proceso['images'];
+                // foreach work it will show only first image
+                if(isset($images[0])){
+        ?>             
+
+                    <div class="col-md-4 col-sm-6 portfolio-item">
+                        <a href="<?=base_url()?>works/show_work/<?=$en_proceso['id']?>" class="portfolio-link" data-toggle="modal">
+                            <div class="portfolio-hover">
+                                <div class="portfolio-hover-content">
+                                     <p ><?=$en_proceso['description']?></p>
+                                </div>
+                            </div>
+                            <img src="<?=base_url()?>img/uploads/<?=$images[0]['name']?>" class="img-responsive" >
+                        </a>
+                        <div class="portfolio-caption">
+                            <h6 class="col-md-9"style="text-align:left;"><?=$en_proceso['title']?></h6>
+                            <p class="col-md-3"style="text-align:left;"><?=$en_proceso['superficie']?> m2</p>
                         </div>
                     </div>
 

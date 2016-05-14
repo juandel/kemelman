@@ -5,6 +5,7 @@ if (uri_string()=="web" || uri_string()=="") {
   $uni_link ="#vivienda_unifamiliar";
   $multi_link ="#vivienda_multifamiliar";
   $varios_link ="#varios";
+  $en_proceso_link ="#en_proceso";
   $equipo_link ="#team";
   $contacto_link ="#contact";
 }else{
@@ -12,6 +13,7 @@ if (uri_string()=="web" || uri_string()=="") {
   $uni_link = base_url()."#vivienda_unifamiliar";
   $multi_link = base_url()."#vivienda_multifamiliar";
   $varios_link = base_url()."#varios";
+  $en_proceso_link = base_url()."#en_proceso";
   $equipo_link = base_url()."#team";
   $contacto_link = base_url()."#contact";
 
@@ -50,6 +52,7 @@ if (uri_string()=="web" || uri_string()=="") {
               <li><a class="page-scroll" href="<?=$uni_link?>">Viviendas Unifamiliares</a></li>
               <li><a class="page-scroll" href="<?=$multi_link?>">Viviendas Multifamiliares</a></li>
               <li><a class="page-scroll" href="<?=$varios_link?>">Varios</a></li>
+              <li><a class="page-scroll" href="<?=$en_proceso_link?>">En Proceso</a></li>
             </ul>
           </li>
           <li>
