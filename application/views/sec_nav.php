@@ -52,7 +52,26 @@ if (uri_string()=="web" || uri_string()=="") {
               <li><a class="page-scroll" href="<?=$uni_link?>">Viviendas Unifamiliares</a></li>
               <li><a class="page-scroll" href="<?=$multi_link?>">Viviendas Multifamiliares</a></li>
               <li><a class="page-scroll" href="<?=$varios_link?>">Varios</a></li>
-              <li><a class="page-scroll" href="<?=$en_proceso_link?>">En Proceso</a></li>
+              
+              <?php 
+              foreach ($en_proceso as $en_procesos => $en_proces) {
+                // echo "<pre>";
+                // print_r($en_proceso['category']);
+                // echo "</pre>";
+                if ($en_proces['category']=='en_proceso') {
+                  $cant_en_proces = $en_proces['category'];
+                }
+              }
+              if (isset($cant_en_proces)) {
+                if (count($cant_en_proces)>0) {
+              ?>
+
+                <li><a class="page-scroll" href="<?=$en_proceso_link?>">En Proceso</a></li>
+              <?php
+                }
+              }
+              ?>
+
             </ul>
           </li>
           <li>

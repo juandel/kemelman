@@ -4,7 +4,9 @@ class MY_Controller extends CI_Controller {
 
         public function __construct()
         {
-                parent::__construct();
+            parent::__construct();
+            $this->load->model(array('Images_model', 'Works_model', 'Team_model'));
+
         }
 
     public function top_template()
@@ -27,7 +29,8 @@ class MY_Controller extends CI_Controller {
 
 	private function nav()
 	{
-		return $this->load->view('sec_nav',NULL, TRUE);
+        $data['en_proceso'] = $this->Works_model->get_works();
+		return $this->load->view('sec_nav',$data, TRUE);
 	}
 
 	private function footer()

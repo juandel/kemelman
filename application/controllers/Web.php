@@ -27,6 +27,7 @@ class Web extends MY_Controller {
 	{	
 		$data['head']=$this->top_template();
 		$data['footer']=$this->bottom_template();
+		// Check core/MY_Controller.php for the top functions. 
 		$data['header']=$this->header();
 		$data['services']=$this->services();
 		$data['portfolio']=$this->portfolio();
@@ -178,8 +179,7 @@ class Web extends MY_Controller {
 		}
 
 		$data['files_in_directory']= scandir('img/slider/');
-
-
+				
 		$data['images']= $images_names;
 		return $this->load->view('sec_header',$data, TRUE);
 
