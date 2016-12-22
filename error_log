@@ -1,2 +1,10 @@
 [31-May-2015 19:11:25] PHP Fatal error:  Class 'MY_Controller' not found in /home1/juandel1/public_html/www/juandel.com/application/controllers/Web.php on line 4
 [31-May-2015 19:20:47] PHP Fatal error:  Can't use function return value in write context in /home1/juandel1/public_html/www/juandel.com/application/views/sec_nav.php on line 39
+[19-Dec-2015 10:24:31 America/Denver] PHP Warning:  Maximum number of allowable file uploads has been exceeded in Unknown on line 0
+[07-Jan-2016 10:29:06 America/Denver] PHP Warning:  Maximum number of allowable file uploads has been exceeded in Unknown on line 0
+[07-Jan-2016 11:13:44 America/Denver] PHP Warning:  Maximum number of allowable file uploads has been exceeded in Unknown on line 0
+[07-Jan-2016 11:26:09 America/Denver] PHP Warning:  Maximum number of allowable file uploads has been exceeded in Unknown on line 0
+[15-Jul-2016 10:24:53 America/Denver] PHP Fatal error:  Maximum execution time of 30 seconds exceeded in /home8/estudjf6/public_html/kemelman/system/libraries/Session/drivers/Session_files_driver.php on line 247
+[23-Sep-2016 12:49:03 America/Denver] PHP Fatal error:  Maximum execution time of 30 seconds exceeded in /home8/estudjf6/public_html/kemelman/system/libraries/Session/drivers/Session_files_driver.php on line 247
+[27-Nov-2016 21:47:56 America/Denver] PHP Fatal error:  Maximum execution time of 30 seconds exceeded in /home8/estudjf6/public_html/kemelman/system/libraries/Session/drivers/Session_files_driver.php on line 247
+[27-Nov-2016 21:48:28 America/Denver] PHP Fatal error:  Maximum execution time of 30 seconds exceeded in /home8/estudjf6/public_html/kemelman/system/libraries/Session/drivers/Session_files_driver.php on line 247
