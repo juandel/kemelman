@@ -1,4 +1,4 @@
 <?php
 
-$config['mandrill_api_key'] = 'GVNAGR1NFAzbReB3M9Pjlw';
+$config['mandrill_api_key'] = 'TWF7hFMxRMcpiwIe_BPS6g';
 ?>

@@ -58,7 +58,7 @@ class Web extends MY_Controller {
 	               array(
 	                     'field'   => 'location', 
 	                     'label'   => 'Location', 
-	                     'rules'   => 'trim|required'
+	                     'rules'   => 'trim'
 	                  ),   
 	               array(
 	                     'field'   => 'message', 
@@ -78,15 +78,16 @@ class Web extends MY_Controller {
 			else{
 				// Fix for date and time
 				date_default_timezone_set('America/Argentina/Buenos_Aires');
+				print_r($this->input->post('name'));
 				// Get data from Form
 				$data['email']=$this->input->post('email');
 				$data['name']=$this->input->post('name');
-				$data['location']=$this->input->post('location');
+				$data['location']='Argentina';
 				$data['message']=$this->input->post('message');
 				// Update client data to DB
 				$this->load->model('Clients_model');
 				$this->Clients_model->set_client($data['email'],$data['name'], $data['location']);
-				
+				print_r($data['name']);
 				// Email config
 
 				    // $this->load->library('email');
@@ -111,15 +112,24 @@ class Web extends MY_Controller {
 				}
 
 				if( $mandrill_ready ) {
-
+					print_r($data['name']);
 					//Send us some email!
 					$email = array(
-						'html' => '<h2>Message:</h2><p>'.$data['message']."</p><br><h4>Customer's location: ". $data['location'].'<h4>', //Consider using a view file
-						'text' => $data['message']."Customer's location: ". $data['location'],
+						'html' => '<h3>Nombre del cliente:</h3>
+						<p>'.$data['name']."</p>
+						<br>
+						<h4>Email del cliente:</h4>
+						<p>".$data['email']."</p>
+						<br>
+						<h4>Mensaje de cliente:</h4>".
+						"<p>".$data['message']."</p>",
+
+						//Consider using a view file
+						'text' => $data['message'],
 						'subject' => 'estudiokemelman.com.ar - Formulario de contacto',
-						'from_email' => $data['email'],
+						'from_email' => 'contact@estudiokemelman.com.ar',
 						'from_name' => $data['name'],
-						'to' => array(array('email' => 'martin@estudiokemelman.com.ar' )) //Check documentation for more details on this one
+						'to' => array(array('email' => 'info@estudiokemelman.com.ar' )) //Check documentation for more details on this one
 						//'to' => array(array('email' => 'joe@example.com' ),array('email' => 'joe2@example.com' )) //for multiple emails
 						);
 
