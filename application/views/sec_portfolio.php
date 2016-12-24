@@ -28,7 +28,7 @@
                                      <p ><?=$viv_uni['description']?></p>
                                 </div>
                             </div>
-                            <!-- To use thumb <?=//substr($images[0]['name'], 0, strpos($images[0]['name'], "."))?>_thumb.jpg -->
+                         
                             <img src="<?=base_url()?>img/uploads/<?=$images[0]['name']?>" class="img-responsive" >
                         </a>
                         <div class="portfolio-caption">
