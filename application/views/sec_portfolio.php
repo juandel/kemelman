@@ -28,13 +28,7 @@
                                      <p ><?=$viv_uni['description']?></p>
                                 </div>
                             </div>
-                            <?php
-                                
-                                $name_of_image = $images[0]['name'];
-                                $string_group = explode('.jpg', $name_of_image);
-
-                            ?>
-                            <img src="<?=base_url()?>img/uploads/<?=$string_group[0]?>_thumb.jpg" class="img-responsive" >
+                            <img src="<?=base_url()?>img/uploads/<?=$images[0]['name']?>" class="img-responsive" >
                         </a>
                         <div class="portfolio-caption">
                             <h6 class="col-md-9"style="text-align:left;"><?=$viv_uni['title']?></h6>
@@ -65,13 +59,7 @@
                                      <p ><?=$viv_multi['description']?></p>
                                 </div>
                             </div>
-                            <?php
-                                
-                                $name_of_image = $images[0]['name'];
-                                $string_group = explode('.jpg', $name_of_image);
-
-                            ?>
-                            <img src="<?=base_url()?>img/uploads/<?=$string_group[0]?>_thumb.jpg" class="img-responsive" >
+                            <img src="<?=base_url()?>img/uploads/<?=$images[0]['name']?>" class="img-responsive" >
                         </a>
                         <div class="portfolio-caption">
                             <h6 class="col-md-9"style="text-align:left;"><?=$viv_multi['title']?></h6>
@@ -104,13 +92,7 @@
                                      <p ><?=$vario['description']?></p>
                                 </div>
                             </div>
-                            <?php
-                                
-                                $name_of_image = $images[0]['name'];
-                                $string_group = explode('.jpg', $name_of_image);
-
-                            ?>
-                            <img src="<?=base_url()?>img/uploads/<?=$string_group[0]?>_thumb.jpg" class="img-responsive" >
+                            <img src="<?=base_url()?>img/uploads/<?=$images[0]['name']?>" class="img-responsive" >
                         </a>
                         <div class="portfolio-caption">
                             <h6 class="col-md-9"style="text-align:left;"><?=$vario['title']?></h6>
@@ -143,13 +125,7 @@
                                      <p ><?=$en_proceso['description']?></p>
                                 </div>
                             </div>
-                            <?php
-                                
-                                $name_of_image = $images[0]['name'];
-                                $string_group = explode('.jpg', $name_of_image);
-
-                            ?>
-                            <img src="<?=base_url()?>img/uploads/<?=$string_group[0]?>_thumb.jpg" class="img-responsive" >
+                            <img src="<?=base_url()?>img/uploads/<?=$images[0]['name']?>" class="img-responsive" >
                         </a>
                         <div class="portfolio-caption">
                             <h6 class="col-md-9"style="text-align:left;"><?=$en_proceso['title']?></h6>
