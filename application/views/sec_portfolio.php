@@ -28,8 +28,8 @@
                                      <p ><?=$viv_uni['description']?></p>
                                 </div>
                             </div>
-                         
-                            <img src="<?=base_url()?>img/uploads/<?=$images[0]['name']?>" class="img-responsive" >
+
+                            <img src="<?=base_url()?>img/uploads/<?=substr($images[0]['name'], 0, strpos($images[0]['name'], ".jpg"))?>_thumb.jpg" class="img-responsive" >
                         </a>
                         <div class="portfolio-caption">
                             <h6 class="col-md-9"style="text-align:left;"><?=$viv_uni['title']?></h6>
